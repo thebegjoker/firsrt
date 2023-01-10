@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="left-content">
+                <div class="img-bg"></div>
+                 <img src="img.jpg" class="img-lg">
+                 <img src="img.jpg" class="img-sm">
+            </div>
+            <div class="right-content">
+                <h5>text</h5>
+                <h2>text hear</h2>
+                <p>Lorem<span> ipsum dolor sit amet</span>consectetur adipisicing elit. Reiciendis ipsum ut quam ea aliquid commodi qui sed adipisci provident eius nostrum quos, minus esse quod natus maiores repellat alias in! Iure qui aliquid sint officiis omnis magni aperiam distinctio atque.</p>
+                <div class="extara-area">
+                    <div class="left">
+                        <h4 class="counnt1">0</h4>
+                        <p>lorem ipsum</p>
+                    </div>
+                    <div class="right">
+                        <h4 class="counnt2">0</h4>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button>lorem</button>
+                    <button>lorem</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <script>
+        let count = 0;
+        let count2 = 0;
+
+        setInterval(() => {
+            
+            if(count<225){
+                count++
+                document.querySelector('.counnt1').textContent = `${count}M+`;
+            }            
+        },100);
+        setInterval(() => {
+            
+            if(count2 < 125){
+                count2++
+                document.querySelector('.counnt2').textContent = `${count2}M+`;
+            }            
+        },90);
+
+    </script>
+</body>
+</html>
